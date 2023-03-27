@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["#D#", "TWT", "#D#"],
+  "key": {
+    "#": {
+      "item": "minecraft:golden_apple"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "T": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "W": {
+      "item": "minecraft:wither_skeleton_skull"
+    }
+  },
+  "result": {
+    "item": "minecraft:knowledge_book"
+  }
+}
