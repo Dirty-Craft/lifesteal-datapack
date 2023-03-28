@@ -14,6 +14,7 @@ Download the datapack and extract it in your world's `datapack` folder. If you'r
 - Players can craft a life with the a special recipe
 - People on a server can see each other's HP below their name
 - Heart reduction only takes affect if the kill was done by a player
+- Players who don't have `Cover me with diamonds` advancement will not lose a heart
 
 ## Heart Recipe
 
@@ -25,4 +26,5 @@ Download the datapack and extract it in your world's `datapack` folder. If you'r
 
 - Do not decrease heart if the killer has maximum heart
 - Do not increase heart if the player who was killed has minimum heart
+- Do not increase heart if the player who was killed doesn't have the minimum advancement
 - Include custom resource pack for the heart item
