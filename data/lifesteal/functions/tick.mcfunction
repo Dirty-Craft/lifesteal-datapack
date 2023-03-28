@@ -10,10 +10,12 @@ execute as @a[scores={ls_killedPlayer=1.., ls_maxHealth=..39}] run tellraw @s [{
 execute as @a[scores={ls_killedPlayer=1.., ls_maxHealth=..39}] run function lifesteal:actions/increase
 
 # Checks if a player has been killed and then takes a life from him
-execute as @a[scores={ls_death=1.., ls_maxHealth=..6}] run tellraw @s [{"text": "You are at minimum heart already, poor guy :(", "color": "red"}]
-execute as @a[scores={ls_death=1.., ls_maxHealth=7..}] run tellraw @s [{"text": "Well that's awkard, You lost a heart :(", "color": "red"}]
-execute as @a[scores={ls_death=1.., ls_maxHealth=7..}] run function lifesteal:actions/decrease
-execute as @a[scores={ls_death=1.., ls_maxHealth=7..}] run effect give @s minecraft:instant_health 1
+execute as @a[scores={ls_death=1.., ls_maxHealth=..6}, advancements={minecraft:story/shiny_gear=true}] run tellraw @s [{"text": "You are at minimum heart already, poor guy :(", "color": "red"}]
+execute as @a[scores={ls_death=1.., ls_maxHealth=7..}, advancements={minecraft:story/shiny_gear=true}] run tellraw @s [{"text": "Well that's awkard, You lost a heart :(", "color": "red"}]
+execute as @a[scores={ls_death=1.., ls_maxHealth=7..}, advancements={minecraft:story/shiny_gear=true}] run function lifesteal:actions/decrease
+execute as @a[scores={ls_death=1.., ls_maxHealth=7..}, advancements={minecraft:story/shiny_gear=true}] run effect give @s minecraft:instant_health 1
+
+execute as @a[scores={ls_death=1.., ls_maxHealth=7..}, advancements={minecraft:story/shiny_gear=false}] run tellraw @s [{"text": "On the bright side you did not lose a heart :)", "color": "blue"}]
 
 # Use heart
 execute as @a[scores={ls_usedHeart=1..}, nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag: {CustomModelData: 69420}}}] at @s run function lifesteal:use_heart
