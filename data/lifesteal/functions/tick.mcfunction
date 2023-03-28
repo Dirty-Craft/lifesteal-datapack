@@ -15,6 +15,9 @@ execute as @a[scores={ls_death=1.., ls_maxHealth=7..}] run tellraw @s [{"text": 
 execute as @a[scores={ls_death=1.., ls_maxHealth=7..}] run function lifesteal:actions/decrease
 execute as @a[scores={ls_death=1.., ls_maxHealth=7..}] run effect give @s minecraft:instant_health 1
 
+# Use heart
+execute as @a[scores={ls_usedHeart=1..}, nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag: {CustomModelData: 69420}}}] at @s run function lifesteal:use_heart
+
 # Store current max health again
 execute as @a store result score @s ls_maxHealth run attribute @s generic.max_health get
 

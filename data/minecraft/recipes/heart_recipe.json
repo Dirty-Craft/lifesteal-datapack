@@ -1,6 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": ["#D#", "TWT", "#D#"],
+  "pattern": [
+    "#D#", 
+    "TWT", 
+    "#D#"],
   "key": {
     "#": {
       "item": "minecraft:golden_apple"
@@ -12,7 +15,7 @@
       "item": "minecraft:totem_of_undying"
     },
     "W": {
-      "item": "minecraft:wither_skeleton_skull"
+      "item": "minecraft:netherite_block"
     }
   },
   "result": {
