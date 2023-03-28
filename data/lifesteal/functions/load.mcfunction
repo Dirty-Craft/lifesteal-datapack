@@ -11,6 +11,7 @@ scoreboard objectives add ls_death deathCount
 # config
 # how much is 1 heart
 scoreboard objectives add HEART_COUNT dummy
+
 scoreboard players set #DELTA HEART_COUNT 2
 
 function nnhealth:setup
