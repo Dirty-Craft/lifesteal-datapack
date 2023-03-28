@@ -21,6 +21,12 @@ execute as @a[scores={ls_usedHeart=1..}, nbt={SelectedItem:{id:"minecraft:warped
 # Store current max health again
 execute as @a store result score @s ls_maxHealth run attribute @s generic.max_health get
 
+# Enable extract life command
+scoreboard players enable @a ls_extlf
+
+execute as @a[scores={ls_extlf=1}] at @s run function lifesteal:extract_life
+
 # Resets all of the scores
 scoreboard players set @a ls_killedPlayer 0
 scoreboard players set @a ls_death 0
+scoreboard players set @a ls_extlf 0

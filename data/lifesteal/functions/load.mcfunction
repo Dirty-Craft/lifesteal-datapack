@@ -9,3 +9,4 @@ scoreboard objectives add ls_killedPlayer playerKillCount
 scoreboard objectives add ls_death minecraft.killed_by:player
 scoreboard objectives add ls_sinceDeath minecraft.custom:minecraft.time_since_death
 scoreboard objectives add ls_usedHeart minecraft.used:warped_fungus_on_a_stick
+scoreboard objectives add ls_extlf trigger
