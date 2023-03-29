@@ -6,7 +6,7 @@ execute as @a store result score @s ls_maxHealth run attribute @s generic.max_he
 
 # Checks if a player has killed another player and then gives him a life
 execute as @a[scores={ls_killedPlayer=1.., ls_maxHealth=40..}] run tellraw @s [{"text": "You have too many hearts boi. Slow down", "color": "red"}]
-execute as @a[scores={ls_killedPlayer=1.., ls_maxHealth=..39}] run function lifesteal:life_increase
+execute as @a[scores={ls_killedPlayer=1.., ls_maxHealth=..39}] at @s run function lifesteal:life_increase
 
 # Checks if a player has been killed and then takes a life from him
 execute as @a[scores={ls_death=1.., ls_maxHealth=..6}, advancements={minecraft:story/shiny_gear=true}] run tellraw @s [{"text": "You are at minimum heart already, poor guy :(", "color": "red"}]
