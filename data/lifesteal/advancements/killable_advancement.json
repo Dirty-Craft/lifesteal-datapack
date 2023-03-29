@@ -1,0 +1,7 @@
+{
+  "criteria": {
+    "killable": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

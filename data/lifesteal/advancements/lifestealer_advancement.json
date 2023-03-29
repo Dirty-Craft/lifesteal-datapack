@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "kill_player_max_health_7+": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "player",
+          "type_specific": {
+            "type": "player",
+            "advancements": {
+              "lifesteal:killable_advancement": true,
+              "minecraft:story/shiny_gear": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "lifesteal:lifesteal_killer"
+  }
+}
