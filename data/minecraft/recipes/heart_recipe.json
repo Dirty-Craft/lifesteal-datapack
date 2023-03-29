@@ -1,23 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#D#", 
-    "TWT", 
-    "#D#"],
-  "key": {
+    "#D#",
+    "THT",
+    "#D#"
+],
+"key": {
     "#": {
-      "item": "minecraft:golden_apple"
+        "item": "minecraft:netherite_ingot"
     },
     "D": {
-      "item": "minecraft:diamond"
+        "item": "minecraft:diamond_block"
     },
     "T": {
-      "item": "minecraft:totem_of_undying"
+        "item": "minecraft:totem_of_undying"
     },
-    "W": {
-      "item": "minecraft:netherite_block"
+    "H": {
+        "item": "minecraft:heart_of_the_sea"
     }
-  },
+},
   "result": {
     "item": "minecraft:knowledge_book"
   }
