@@ -25,6 +25,4 @@ Download the datapack and extract it in your world's `datapack` folder. If you'r
 ## TODO
 
 - Do not decrease heart if the killer has maximum heart
-- Do not increase heart if the player who was killed has minimum heart
-- Do not increase heart if the player who was killed doesn't have the minimum advancement
 - Include custom resource pack for the heart item
