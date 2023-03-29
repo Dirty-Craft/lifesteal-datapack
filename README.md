@@ -8,19 +8,19 @@ Download the datapack and extract it in your world's `datapack` folder. If you'r
 
 ## Features
 
-- Minimum amount of heart is 3 (6HP)
-- Maximum amount of heart is 20 (40HP)
-- Players can extract life with `/trigger ls_extlf` command
-- Players can craft a life with the a special recipe
+- Minimum amount of hearts is 3 (6HP)
+- Maximum amount of hearts is 20 (40HP)
+- Players can extract a heart with `/trigger ls_extlf` command
+- Players can craft a heart with the a special recipe
 - People on a server can see each other's HP below their name
 - Heart reduction only takes affect if the kill was done by a player
 - Players who don't have `Cover me with diamonds` advancement will not lose a heart
+- Players can't consume heart items past 10 hearts (20HP) to encourage PVP action
+- Players won't receive a heart if the victim has is at minimum HP
 
 ## Heart Recipe
 
-
-![Screenshot from 2023-03-28 18-52-54](https://user-images.githubusercontent.com/65359713/228290471-c036730c-4318-4501-b89f-835f2c11a7dd.png)
-
+![Screenshot from 2023-03-29 17-22-25](https://user-images.githubusercontent.com/65359713/228560949-9367e8b4-4563-4d46-92f6-78ad4c0b367a.png)
 
 ## TODO
 
