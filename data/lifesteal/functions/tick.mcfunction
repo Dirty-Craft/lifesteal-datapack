@@ -5,7 +5,7 @@ execute as @a[scores={ls_sinceDeath=0}] run function lifesteal:actions/sync
 execute as @a store result score @s ls_maxHealth run attribute @s generic.max_health get
 
 # Check if the player is killable and give him the custom advancement
-execute as @a[scores={ls_maxHealth=7..}, advancements={lifesteal:killable_advancement=false}] run advancement grant @s only lifesteal:killable_advancement
+execute as @a[scores={ls_maxHealth=7.., ls_playTime=36000..}, advancements={lifesteal:killable_advancement=false}] run advancement grant @s only lifesteal:killable_advancement
 execute as @a[scores={ls_maxHealth=..6}, advancements={lifesteal:killable_advancement=true}] run advancement revoke @s only lifesteal:killable_advancement
 
 # Checks if a player has been killed and then takes a life from him
