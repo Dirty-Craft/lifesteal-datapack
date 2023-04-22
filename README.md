@@ -17,6 +17,7 @@ Download the datapack and extract it in your world's `datapack` folder. If you'r
 - Players who don't have `Cover me with diamonds` advancement will not lose a heart
 - Players can't consume "crafted" heart items past 10 hearts (20HP) to encourage PVP action
 - Players won't receive a heart if the victim has is at minimum HP
+- Allow opting-out of lifesteal for certain players (grant lifesteal:disabled_advancement advancement)
 
 ## Heart Recipe
 
