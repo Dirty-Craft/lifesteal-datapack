@@ -9,8 +9,7 @@
             "type": "player",
             "advancements": {
               "lifesteal:killable_advancement": true,
-              "minecraft:story/shiny_gear": true,
-              "lifesteal:disabled_advancement": false
+              "minecraft:story/shiny_gear": true
             }
           }
         }
