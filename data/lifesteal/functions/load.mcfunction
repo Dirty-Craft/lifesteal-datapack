@@ -14,4 +14,4 @@ scoreboard objectives add ls_playTime minecraft.custom:play_time
 
 scoreboard objectives add ls_life_owed dummy
 schedule clear lifesteal:handle_disable
-schedule function lifesteal:handle_disable 5s
+schedule function lifesteal:handle_disable 0.5s
