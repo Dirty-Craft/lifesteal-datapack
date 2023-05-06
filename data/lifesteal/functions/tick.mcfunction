@@ -4,13 +4,13 @@ execute as @a[scores={ls_sinceDeath=0}] run function lifesteal:actions/sync
 # Store current max health
 execute as @a store result score @s ls_maxHealth run attribute @s generic.max_health get
 
+# Checks if a player has been killed and then takes a life from him
+function lifesteal:lifesteal_victim
+
 # Check if the player is killable and give him the custom advancement
 execute as @a[scores={ls_maxHealth=7.., ls_playTime=36000.., ls_sinceDeath=18000..}, advancements={lifesteal:killable_advancement=false}] run advancement grant @s only lifesteal:killable_advancement
 execute as @a[scores={ls_maxHealth=..6}, advancements={lifesteal:killable_advancement=true}] run advancement revoke @s only lifesteal:killable_advancement
 execute as @a[scores={ls_sinceDeath=..18000}, advancements={lifesteal:killable_advancement=true}] run advancement revoke @s only lifesteal:killable_advancement
-
-# Checks if a player has been killed and then takes a life from him
-function lifesteal:lifesteal_victim
 
 # Use heart
 execute as @a[scores={ls_usedHeart=1..}, nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag: {CustomModelData: 69420}}}, advancements={lifesteal:disabled_advancement=false}] at @s run function lifesteal:use_crafted_heart
